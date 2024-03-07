@@ -1,6 +1,6 @@
 const expressJwt = require("express-jwt");
 const { JWT_SECRET } = require("config");
-
+console.log(JWT_SECRET);
 module.exports = jwt;
 
 // Dreamhost Proxy server process inserts extra '/' for reason I don't understand

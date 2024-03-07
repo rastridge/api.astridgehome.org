@@ -1,6 +1,6 @@
 ﻿const { JWT_SECRET } = require("config");
 const jwt = require("jsonwebtoken");
-const activityLog = require("_helpers/activity-log");
+// const activityLog = require("_helpers/activity-log");
 
 module.exports = {
 	authenticate,

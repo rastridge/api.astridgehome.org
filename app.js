@@ -10,8 +10,6 @@ const rfs = require("rotating-file-stream");
 const morgan = require("morgan");
 //const activityLog = require("_helpers/activity-log")
 
-// create a rotating write stream
-/**/
 const accessLogStream = rfs.createStream("access.log", {
 	interval: "1d", // rotate daily
 	path: "/home/rastridge/api.astridgehome.org/logs/requests/",
@@ -61,14 +59,12 @@ app.use("/users", require("./apps/users/users.controller"));
 
 app.use(errorHandler); // next()
 
-const { DB, PORT, NODE_ENV } = require("config");
+const { DB, PORT } = require("config");
 
-// const port = process.env.NODE_ENV === "production" ? 443 : PORT;
-const port = 9003;
-const server = app.listen(port, function () {
+const server = app.listen(PORT, function () {
 	console.log(
 		"BRC api server listening on port " +
-			port +
+			PORT +
 			" using DB " +
 			DB.DB_DATABASE +
 			" on " +

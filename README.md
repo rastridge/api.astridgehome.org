@@ -31,7 +31,7 @@ Websites/Manage Websites / Manage / Additional setting / Paths
 Edit server code
 
 ```
-cd /Users/rastridge/code/astridgehome/api.astridgehome.org/ vscode kps-api
+cd /Users/rastridge/code/astridgehome/api.astridgehome.org/ vscode api.astridgehome.org
 ```
 
 To Upload server code to api.astridgehome.org
